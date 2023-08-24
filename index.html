@@ -1,108 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="src/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <title>EcoLife</title>
-  </head>
-  <body>
-  
-    <!-- NAVBAR -->
-    <header class="l-header">
-      <nav class="nav bd-grid">
-          <div>
-              <a href="#" class="nav__logo">
-                  <img src="img/logo.svg" alt=""></a>
-          </div>
-  
-          <div class="nav__menu" id="nav-menu">
-              <ul class="nav__list">
-                  <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                  <li class="nav__item"><a href="#why" class="nav__link">Why</a></li>
-                  <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
-                  <li class="nav__item"><a href="#project" class="nav__link">Project</a></li>
-                  <li class="nav__item"><a href="#certificate" class="nav__link">Certification</a></li>
-              </ul>
-          </div>
-  
-          <div class="nav__toggle" id="nav-toggle">
-              <i class='bx bx-menu'></i>
-          </div>
-      </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS LOCAL -->
+  <link rel="stylesheet" href="styles/style.css" />
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <!-- BOX ICON -->
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <title>EcoLife</title>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="#" class="nav__logo">
+          <img src="img/logo.svg" alt=""></a>
+      </div>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+          <li class="nav__item"><a href="#why" class="nav__link">Why?</a></li>
+          <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+          <li class="nav__item"><a href="#project" class="nav__link">Project</a></li>
+          <li class="nav__item"><a href="#certificate" class="nav__link">Certification</a></li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-menu'></i>
+      </div>
+    </nav>
   </header>
   <!-- END NAVBAR -->
 
-    <!-- COVER -->
-    <div class="cover" >
-      <!-- PARALLAX -->
+  <!-- COVER -->
+  <div class="cover">
+    <!-- PARALLAX -->
 
-      <section class="section" id="home">
-        <img src="img/main.png" id="bg" alt="" srcset="" />
-        <img src="img/cover_doctor.png" id="doctor" alt="" srcset="" />
-        <img src="img/cover_text.png" id="text" alt="" srcset="" />
-      </section>
-      <script type="text/javascript">
-        let doctor = document.getElementById("doctor");
-        let bg = document.getElementById("bg");
-        let text = document.getElementById("text");
+    <section class="section" id="home">
+      <img src="img/main.png" id="bg" alt="" srcset="" />
+      <img src="img/cover_doctor.png" id="doctor" alt="" srcset="" />
+      <img src="img/cover_text.png" id="text" alt="" srcset="" />
+    </section>
+    <script type="text/javascript">
+      let doctor = document.getElementById("doctor");
+      let bg = document.getElementById("bg");
+      let text = document.getElementById("text");
 
-        window.addEventListener("scroll", function () {
-          var value = window.scrollY;
+      window.addEventListener("scroll", function () {
+        var value = window.scrollY;
 
-          doctor.style.left = -value * 0.15 + "px";
-          bg.style.top = value * 0.2 + "px";
-          text.style.top = value * 0.35 + "px";
-        });
-      </script>
+        doctor.style.left = -value * 0.15 + "px";
+        bg.style.top = value * 0.2 + "px";
+        text.style.top = value * 0.35 + "px";
+      });
+    </script>
 
-      <!-- END PARALLAX -->
-    </div>
-
-    <!-- END COVER -->
-
-
-
-    <!-- content -->
-    <div class="content-container" id="why">
-      <div class="content">
-          <div class="content-text">
-              <h1 class="content-title">Kenapa Sih Kita Harus Mengutamakan Kesehatan?</h1>
-              <p class="content-paragraph">
-                  Kesehatan adalah aset berharga yang harus dijaga dengan baik. Dengan memiliki gaya hidup sehat, kita memberikan fondasi yang kuat bagi kebahagiaan dan produktivitas dalam kehidupan kita. Tubuh yang sehat memungkinkan kita untuk mengejar impian dan menghadapi tantangan dengan lebih baik. Jadi, mari kita mulai merawat diri kita dengan pola makan yang baik, olahraga teratur, dan perawatan kesehatan yang tepat. Dengan begitu, kita dapat menikmati hidup yang lebih panjang dan bermakna
-              </p>
-          </div>
-          <div class="content-image-container">
-              <img src="img/why.png" alt="Thinking Person" class="content-image">
-          </div>
-      </div>
+    <!-- END PARALLAX -->
   </div>
-  <!-- end content -->
 
-  <!-- number -->
-    <div class="numbers">
-        <div class="patient">Jumlah Orang Yang Terkena Penyakit</div>
-      <div class="number-container">
-        <div class="content-number">
-          <h3 class="text">Penyakit Menular</h3>
-          <div class="number" id="clients-count">0</div>
-        </div>
+  <!-- END COVER -->
 
-        <div class="content-number">
-          <h3 class="text">Penyakit Tidak Menular</h3>
-          <div class="number" id="our-clients-count">0</div>
-        </div>
+
+
+  <!-- CONTENT -->
+  <div class="content-container" id="why">
+    <div class="content">
+      <div class="content-text">
+        <h1 class="content-title">Kenapa Sih Kita Harus Mengutamakan Kesehatan?</h1>
+        <p class="content-paragraph">
+          Kesehatan adalah aset berharga yang harus dijaga dengan baik. Dengan memiliki gaya hidup sehat, kita
+          memberikan fondasi yang kuat bagi kebahagiaan dan produktivitas dalam kehidupan kita. Tubuh yang sehat
+          memungkinkan kita untuk mengejar impian dan menghadapi tantangan dengan lebih baik. Jadi, mari kita mulai
+          merawat diri kita dengan pola makan yang baik, olahraga teratur, dan perawatan kesehatan yang tepat. Dengan
+          begitu, kita dapat menikmati hidup yang lebih panjang dan bermakna
+        </p>
+      </div>
+      <div class="content-image-container">
+        <img src="img/why.png" alt="Thinking Person" class="content-image">
       </div>
     </div>
-    <!-- end number -->
+  </div>
+  <!-- END CONTENT -->
 
+  <!-- NUMBER -->
+  <div class="numbers">
+    <div class="patient">Jumlah Orang Yang Terkena Penyakit</div>
+    <div class="number-container">
+      <div class="content-number">
+        <h3 class="text">Penyakit Menular</h3>
+        <div class="number" id="clients-count">0</div>
+      </div>
 
-    
+      <div class="content-number">
+        <h3 class="text">Penyakit Tidak Menular</h3>
+        <div class="number" id="our-clients-count">0</div>
+      </div>
+    </div>
+  </div>
+  <!-- END NUMBER -->
 
-    <script src="src/js/autonumber.js"></script>
+  <!-- JS LOCAL -->
+  <script src="js/main.js"></script>
+  <script src="js/autonumber.js"></script>
+  <!-- END JS LOCAL -->
 
-  </body>
+</body>
+
 </html>
