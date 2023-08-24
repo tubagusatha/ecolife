@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins:wght@200&display=swap" rel="stylesheet">
     <title>EcoLife</title>
   </head>
   <body>
@@ -19,7 +22,7 @@
           <div class="nav__menu" id="nav-menu">
               <ul class="nav__list">
                   <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                  <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                  <li class="nav__item"><a href="#why" class="nav__link">Why</a></li>
                   <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
                   <li class="nav__item"><a href="#project" class="nav__link">Project</a></li>
                   <li class="nav__item"><a href="#certificate" class="nav__link">Certification</a></li>
@@ -34,10 +37,10 @@
   <!-- END NAVBAR -->
 
     <!-- COVER -->
-    <div class="cover">
+    <div class="cover" >
       <!-- PARALLAX -->
 
-      <section class="section">
+      <section class="section" id="home">
         <img src="img/main.png" id="bg" alt="" srcset="" />
         <img src="img/cover_doctor.png" id="doctor" alt="" srcset="" />
         <img src="img/cover_text.png" id="text" alt="" srcset="" />
@@ -61,20 +64,43 @@
 
     <!-- END COVER -->
 
+
+
+    <!-- content -->
+    <div class="content-container" id="why">
+      <div class="content">
+          <div class="content-text">
+              <h1 class="content-title">Kenapa Sih Kita Harus Mengutamakan Kesehatan?</h1>
+              <p class="content-paragraph">
+                  Kesehatan adalah aset berharga yang harus dijaga dengan baik. Dengan memiliki gaya hidup sehat, kita memberikan fondasi yang kuat bagi kebahagiaan dan produktivitas dalam kehidupan kita. Tubuh yang sehat memungkinkan kita untuk mengejar impian dan menghadapi tantangan dengan lebih baik. Jadi, mari kita mulai merawat diri kita dengan pola makan yang baik, olahraga teratur, dan perawatan kesehatan yang tepat. Dengan begitu, kita dapat menikmati hidup yang lebih panjang dan bermakna
+              </p>
+          </div>
+          <div class="content-image-container">
+              <img src="img/why.png" alt="Thinking Person" class="content-image">
+          </div>
+      </div>
+  </div>
+  <!-- end content -->
+
+  <!-- number -->
     <div class="numbers">
-        <div class="patient">Our Patient</div>
+        <div class="patient">Jumlah Orang Yang Terkena Penyakit</div>
       <div class="number-container">
         <div class="content-number">
-          <h3 class="text">Infectious diseasesr</h3>
+          <h3 class="text">Penyakit Menular</h3>
           <div class="number" id="clients-count">0</div>
         </div>
 
         <div class="content-number">
-          <h3 class="text">Non-communicable diseases</h3>
+          <h3 class="text">Penyakit Tidak Menular</h3>
           <div class="number" id="our-clients-count">0</div>
         </div>
       </div>
     </div>
+    <!-- end number -->
+
+
+    
 
     <script src="src/js/autonumber.js"></script>
 

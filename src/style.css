@@ -116,18 +116,6 @@ a {
     font-weight: var(--font-semi);
 }
 
-@media screen and (max-width: 767px) {
-    .nav__menu {
-        position: fixed;
-        top: var(--header-height);
-        right: -100%;
-        width: 80%;
-        height: 100%;
-        padding: 2rem;
-        background-color: var(--second-color);
-        transition: .5s;
-    }
-}
 
 .nav__item {
     margin-bottom: var(--mb-4);
@@ -156,42 +144,7 @@ a {
     right: 0;
 }
 
-@media screen and (min-width: 768px) {
-    .nav {
-        height: calc(var(--header-height) + 1.5rem);
-    }
 
-    .nav__list {
-        display: flex;
-        padding-top: 0;
-    }
-
-    .nav__item {
-        margin-left: var(--mb-6);
-        margin-bottom: 0;
-    }
-
-    .nav__toggle {
-        display: none;
-    }
-
-    .nav__link {
-        color: var(--second-color);
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .bd-grid {
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .nav {
-        margin: 0 20px;
-    }
-}
 
 /*===== END NAVBAR =====*/
 
@@ -232,7 +185,6 @@ section::after
     width: 100%;
     height: 100%;
     z-index: 10000;
-    mix-blend-mode: color;
 }
 
 section img
@@ -254,10 +206,14 @@ section img
 
 /* number auto increment  */
 
+.numbers {
+    margin-top: 200px;
+}
+
 .patient {
     font-weight: bold;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     padding: 20px;
 }
 
@@ -270,7 +226,7 @@ section img
   .number-container {
     width: 50%;
     margin: 0 auto;
-    padding: 70px;
+    padding: 30px;
     text-align: center;
     align-items: center;
     display: flex;
@@ -281,6 +237,7 @@ section img
   .number {
     font-size: 40px;
     font-weight: 700;
+    font-family: 'Poppins', sans-serif;
 
   }
   
@@ -305,6 +262,52 @@ section img
   }
 
 
+  .content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.content-text {
+    flex: 1;
+    font-family: 'Caprasimo', cursive;
+font-family: 'Poppins', sans-serif;
+}
+
+.content-title {
+    margin-bottom: 30px;
+}
+
+.content-paragraph {
+    text-align: justify;
+    
+}
+
+.content-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-image {
+    max-width: 500px;
+}
+
+
+
+
 /* responsive */
 
 @media screen and (max-width:780px) {
@@ -325,6 +328,23 @@ section img
         padding: 20px;
     }
 
+    .content {
+        flex-direction: row;
+        align-items: center;
+        width: 350px;
+    }
+    .content-text {
+        font-size: 8px;
+    }
+    .content-image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center; /* Center the content */
+        align-items: center;
+    }
+    .content-image {
+        max-width: 200px;
+    }
 }
 @media screen and (max-width:460px){
 
@@ -336,3 +356,53 @@ section img
 
 }
 
+@media screen and (min-width: 768px) {
+    .nav {
+        height: calc(var(--header-height) + 1.5rem);
+    }
+
+    .nav__list {
+        display: flex;
+        padding-top: 0;
+    }
+
+    .nav__item {
+        margin-left: var(--mb-6);
+        margin-bottom: 0;
+    }
+
+    .nav__toggle {
+        display: none;
+    }
+
+    .nav__link {
+        color: var(--second-color);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .bd-grid {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .nav {
+        margin: 0 20px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .nav__menu {
+        position: fixed;
+        top: var(--header-height);
+        right: -100%;
+        width: 80%;
+        height: 100%;
+        padding: 2rem;
+        background-color: var(--second-color);
+        transition: .5s;
+    }
+}
