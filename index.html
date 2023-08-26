@@ -1,164 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS LOCAL -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOX ICON -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>EcoLife</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- CSS LOCAL -->
-  <link rel="stylesheet" href="styles/style.css" />
-  <!-- GOOGLE FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins:wght@200&display=swap" rel="stylesheet">
-  <!-- BOX ICON -->
-  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-  <title>EcoLife</title>
-</head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo"> <img src="img/logo.svg" alt="" /></a>
+        </div>
 
-<body>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item"><a href="#why" class="nav__link">Why?</a></li>
+            <li class="nav__item">
+              <a href="#education" class="nav__link">Education</a>
+            </li>
+            <li class="nav__item">
+              <a href="#project" class="nav__link">Project</a>
+            </li>
+          </ul>
+        </div>
 
-  <!-- NAVBAR -->
-  <header class="l-header">
-    <nav class="nav bd-grid">
-      <div>
-        <a href="#" class="nav__logo">
-          <img src="img/logo.svg" alt=""></a>
-      </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+    <!-- END NAVBAR -->
 
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-          <li class="nav__item"><a href="#why" class="nav__link">Why?</a></li>
-          <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
-          <li class="nav__item"><a href="#project" class="nav__link">Project</a></li>
-        </ul>
-      </div>
+    <!-- COVER -->
+    <div class="cover">
+      <!-- PARALLAX -->
 
-      <div class="nav__toggle" id="nav-toggle">
-        <i class='bx bx-menu'></i>
-      </div>
-    </nav>
-  </header>
-  <!-- END NAVBAR -->
+      <section class="section" id="home">
+        <img src="img/main.svg" id="bg" alt="" srcset="" />
+        <img src="img/cover_doctor.svg" id="doctor" alt="" srcset="" />
+        <img src="img/cover_text.svg" id="text" alt="" srcset="" />
+      </section>
 
-  <!-- COVER -->
-  <div class="cover">
-    <!-- PARALLAX -->
+      <!-- END PARALLAX -->
+    </div>
 
-    <section class="section" id="home">
-      <img src="img/main.svg" id="bg" alt="" srcset="" />
-      <img src="img/cover_doctor.svg" id="doctor" alt="" srcset="" />
-      <img src="img/cover_text.svg" id="text" alt="" srcset="" />
-    </section>
-  
+    <!-- END COVER -->
 
-    <!-- END PARALLAX -->
-  </div>
-
-  <!-- END COVER -->
-
-
-
-  <!-- CONTENT -->
-  <div class="content-container" id="why">
-    <div class="content">
-      <div class="content-text">
-        <h1 class="content-title">Kenapa Sih Kita Harus Mengutamakan Kesehatan?</h1>
-        <p class="content-paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptatibus ad ea accusamus quisquam dolorum aspernatur dolores quia, nam sapiente et corrupti quaerat veritatis officia incidunt placeat. Eos, tempore eum.
-        </p>
-      </div>
-      <div class="content-image-container">
-        <img src="img/why.svg" alt="Thinking Person" class="content-image">
+    <!-- CONTENT -->
+    <div class="content-container" id="why">
+      <div class="content">
+        <div class="content-text">
+          <h1 class="content-title">
+            Kenapa Sih Kita Harus Mengutamakan Kesehatan?
+          </h1>
+          <p class="content-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            voluptatibus ad ea accusamus quisquam dolorum aspernatur dolores
+            quia, nam sapiente et corrupti quaerat veritatis officia incidunt
+            placeat. Eos, tempore eum.
+          </p>
+        </div>
+        <div class="content-image-container">
+          <img src="img/why.svg" alt="Thinking Person" class="content-image" />
+        </div>
       </div>
     </div>
-  </div>
-  <!-- END CONTENT -->
+    <!-- END CONTENT -->
 
-  <!-- NUMBER -->
-  <div class="numbers">
-    <div class="patient">Jumlah Orang Yang Terkena Penyakit</div>
-    <div class="number-container">
-      <div class="content-number">
-        <h3 class="text">Penyakit Menular</h3>
-        <div class="number" id="clients-count">0</div>
-      </div>
+    <!-- NUMBER -->
+    <div class="numbers">
+      <div class="patient">Jumlah Orang Yang Terkena Penyakit</div>
+      <div class="number-container">
+        <div class="content-number">
+          <h3 class="text">Penyakit Menular</h3>
+          <div class="number" id="clients-count">0</div>
+        </div>
 
-      <div class="content-number">
-        <h3 class="text">Penyakit Tidak Menular</h3>
-        <div class="number" id="our-clients-count">0</div>
+        <div class="content-number">
+          <h3 class="text">Penyakit Tidak Menular</h3>
+          <div class="number" id="our-clients-count">0</div>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- END NUMBER -->
+    <!-- END NUMBER -->
 
+    <!-- image -->
 
-  <!-- image -->
-
-  <div id="education" class="about">
-    <h2 class="text-about">Ini Adalah Dampak Dari Tidak Menjaga Kesehatan Lingkungan</h2>
-    <div class="image-about">
-      <div class="image-container">
+    <div id="education" class="about">
+      <h2 class="text-about">
+        Ini Adalah Dampak Dari Tidak Menjaga Kesehatan Lingkungan
+      </h2>
+      <div class="image-about">
+        <div class="image-container">
           <div class="image-group">
-              <img class="imga" src="img/kerusakan1.jpeg" alt="Image 1">
-              <img class="imga"" src="img/kerusakan3.jpg" alt="Image 3">
+            <img class="imga" src="img/kerusakan1.png" alt="Image 1" />
+            <img class="imga"" src="img/kerusakan2.png" alt="Image 3">
           </div>
           <div class="image-group">
-            <img class="imga" src="img/kerusakan2.jpg" alt="Image 2">
-            <img class="imga" src="img/kerusakan4.jpg" alt="Image 6">
+            <img class="imga" src="img/kerusakan3.png" alt="Image 2" />
+            <img class="imga" src="img/kerusakan4.png" alt="Image 6" />
           </div>
+        </div>
+        <div class="image-content"></div>
       </div>
-      <div class="image-content"></div>
-  </div>
-    
-  </div>
+    </div>
 
-  
-  <div class="carousel-container">
-    <h1 class="text-carousel">Blog Kesehatan</h1>
-    <div class="card-carousel">
+    <div class="carousel-container">
+      <h1 class="text-carousel">Blog Kesehatan</h1>
+      <div class="card-carousel">
         <div class="card">
-            <img class="img-carousel" src="img/blog1.jpg" alt="Image 1">
-            <div class="card-content">
-                <h3 style="margin-bottom: 5px;">Pentingnya Menjaga kesehatan</h3>
-                <a class="a-carousel" href="">klik disini untuk selengkapnya</a>
-            </div>
-        </div>
-        <div class="card">
-            <img class="img-carousel" src="img/blog2.jpg" alt="Image 2">
-            <div class="card-content">
-              <h3 style="margin-bottom: 5px;">Kenapa Kita Harus Merawat Lingkungan Kita </h3>
-              <a class="a-carousel" href="">klik disini untuk selengkapnya</a>
-            </div>
-        </div>
-        <div class="card">
-          <img class="img-carousel" src="img/blog2.jpg" alt="Image 2">
+          <img class="img-carousel" src="img/blog1.jpg" alt="Image 1" />
           <div class="card-content">
-            <h3  style="margin-bottom: 5px;">Kenapa Kita Harus Merawat Lingkungan Kita </h3>
+            <h3 style="margin-bottom: 5px">Pentingnya Menjaga kesehatan</h3>
             <a class="a-carousel" href="">klik disini untuk selengkapnya</a>
           </div>
-      </div>
-        <div class="card">
-            <img class="img-carousel" src="img/blog3.jpg" alt="Image 3">
-            <div class="card-content">
-              <h3 style="margin-bottom: 5px;">Cara Hidup Sehat</h3>
-              <a class="a-carousel" href="">klik disini untuk selengkapnya</a>
-            </div>
         </div>
+        <div class="card">
+          <img class="img-carousel" src="img/blog2.jpg" alt="Image 2" />
+          <div class="card-content">
+            <h3 style="margin-bottom: 5px">
+              Kenapa Kita Harus Merawat Lingkungan Kita
+            </h3>
+            <a class="a-carousel" href="">klik disini untuk selengkapnya</a>
+          </div>
+        </div>
+        <div class="card">
+          <img class="img-carousel" src="img/blog2.jpg" alt="Image 2" />
+          <div class="card-content">
+            <h3 style="margin-bottom: 5px">
+              Kenapa Kita Harus Merawat Lingkungan Kita
+            </h3>
+            <a class="a-carousel" href="">klik disini untuk selengkapnya</a>
+          </div>
+        </div>
+        <div class="card">
+          <img class="img-carousel" src="img/blog3.jpg" alt="Image 3" />
+          <div class="card-content">
+            <h3 style="margin-bottom: 5px">Cara Hidup Sehat</h3>
+            <a class="a-carousel" href="">klik disini untuk selengkapnya</a>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
 
-  
-
-
-
-
-  <!-- JS LOCAL -->
-  <script src="js/main.js"></script>
-  <script src="js/autonumber.js"></script>
-  <script src="js/script.js"></script>
-  <!-- END JS LOCAL -->
-
-</body>
-
+    <!-- JS LOCAL -->
+    <script src="js/main.js"></script>
+    <script src="js/autonumber.js"></script>
+    <script src="js/script.js"></script>
+    <!-- END JS LOCAL -->
+  </body>
 </html>
