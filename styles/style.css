@@ -48,7 +48,7 @@ body::-webkit-scrollbar {
     --mb-6: 3rem;
     /* LAYER */
     --z-back: -10;
-    --z-fixed: 100;
+    --z-fixed: 99;
     --transition: all 333ms ease;
 }
 
