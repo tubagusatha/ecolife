@@ -266,14 +266,14 @@ section img
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 400px;
 }
 
 .content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1100px;
+    max-width: 1300px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
@@ -282,7 +282,7 @@ section img
 .content-text {
     flex: 1;
     font-family: 'Caprasimo', cursive;
-font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .content-title {
@@ -305,6 +305,71 @@ font-family: 'Poppins', sans-serif;
     max-width: 500px;
 }
 
+.about {
+    margin-top: 300px;
+}
+.text-about{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.image-about {
+    position: relative; /* Mengatur posisi relatif untuk elemen tumpukan */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    max-width: calc(33.33% - 20px);
+    padding: 20px;
+
+}
+
+.imga {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.9s;
+}
+
+.imga:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.image-content {
+    position: absolute; /* Mengatur posisi absolut untuk elemen tumpukan */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/Background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    z-index: -1; /* Mengatur elemen ini di belakang konten lain */
+}
+
+@media (max-width: 768px) {
+    .image-group {
+        max-width: calc(50% - 20px);
+    }
+}
+
+
 
 
 
@@ -313,19 +378,34 @@ font-family: 'Poppins', sans-serif;
 @media screen and (max-width:780px) {
 
 
+    .image-content{
+        width: 100%;
+    }
+    
+
     .section {
-        height: 300px;
+        height: 320px;
     }
 
     .text {
-        font-size: 20px;
+        font-size: 15px;
+    }
+
+    .content-number {
+        margin: 10px;
     }
 
     .number-container {
-        
+        margin: 15px;
         display: grid;
-        grid-template-rows: repeat(2,2fr);
+        grid-template-rows: repeat(2,1fr);
+        align-items: center;
         padding: 20px;
+    }
+
+    .number-container {
+        padding: 20px;
+        margin: 0 auto;
     }
 
     .content {
@@ -346,11 +426,13 @@ font-family: 'Poppins', sans-serif;
         max-width: 200px;
     }
 }
+
+
 @media screen and (max-width:460px){
 
 
     .section {
-        height: 230px;
+        height: 210px;
     }
 
 

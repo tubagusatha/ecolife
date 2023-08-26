@@ -31,7 +31,6 @@
           <li class="nav__item"><a href="#why" class="nav__link">Why?</a></li>
           <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
           <li class="nav__item"><a href="#project" class="nav__link">Project</a></li>
-          <li class="nav__item"><a href="#certificate" class="nav__link">Certification</a></li>
         </ul>
       </div>
 
@@ -47,9 +46,9 @@
     <!-- PARALLAX -->
 
     <section class="section" id="home">
-      <img src="img/main.png" id="bg" alt="" srcset="" />
-      <img src="img/cover_doctor.png" id="doctor" alt="" srcset="" />
-      <img src="img/cover_text.png" id="text" alt="" srcset="" />
+      <img src="img/main.svg" id="bg" alt="" srcset="" />
+      <img src="img/cover_doctor.svg" id="doctor" alt="" srcset="" />
+      <img src="img/cover_text.svg" id="text" alt="" srcset="" />
     </section>
     <script type="text/javascript">
       let doctor = document.getElementById("doctor");
@@ -60,8 +59,8 @@
         var value = window.scrollY;
 
         doctor.style.left = -value * 0.15 + "px";
-        bg.style.top = value * 0.2 + "px";
-        text.style.top = value * 0.35 + "px";
+        bg.style.top = value * 0.20 + "px";
+        text.style.top = value * 0.40 + "px";
       });
     </script>
 
@@ -86,7 +85,7 @@
         </p>
       </div>
       <div class="content-image-container">
-        <img src="img/why.png" alt="Thinking Person" class="content-image">
+        <img src="img/why.svg" alt="Thinking Person" class="content-image">
       </div>
     </div>
   </div>
@@ -108,6 +107,28 @@
     </div>
   </div>
   <!-- END NUMBER -->
+
+
+  <!-- image -->
+
+  <div id="education" class="about">
+    <h2 class="text-about">Ini Adalah Dampak Dari Tidak Menjaga Kesehatan Lingkungan</h2>
+    <div class="image-about">
+      <div class="image-container">
+          <div class="image-group">
+              <img class="imga" src="img/kerusakan1.jpeg" alt="Image 1">
+              <img class="imga"" src="img/kerusakan3.jpg" alt="Image 3">
+          </div>
+          <div class="image-group">
+            <img class="imga" src="img/kerusakan2.jpg" alt="Image 2">
+            <img class="imga" src="img/kerusakan4.jpg" alt="Image 6">
+          </div>
+      </div>
+      <div class="image-content"></div>
+  </div>
+    
+  </div>
+
 
   <!-- JS LOCAL -->
   <script src="js/main.js"></script>

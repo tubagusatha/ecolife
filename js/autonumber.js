@@ -7,7 +7,7 @@
      if(clientsCounter == 9000) {
          clearInterval(clientsInterval);
      }
- }, 1);
+ }, 4);
  
  // animasi our client in this years
  var ourClientsCount = document.getElementById("our-clients-count");
@@ -18,4 +18,4 @@
      if(ourClientsCounter == 10000 ) {
          clearInterval(ourClientsInterval);
      }
- },2);
+ },3);
